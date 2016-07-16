@@ -1,4 +1,18 @@
 main {
-    background: blue;
-    height: 200px;
+    background: lightgrey;
+    height: 100%;
+}
+
+ul li {
+	display: inline;
+	padding: 15px;
+}
+
+header {
+	height: 50px;
+	background-color: lightblue;
+}
+
+header nav ul {
+	float: right;
 }
