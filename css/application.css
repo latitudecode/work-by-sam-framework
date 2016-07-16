@@ -1,9 +1,23 @@
+/* OVERALL */
+
+.fr {
+	float: right;
+}
+
+.fl {
+	float: left;
+}
+
+/* MAIN */
+
 main {
     background: lightgrey;
     height: 100%;
 }
 
-ul li {
+/* HEADER */
+
+header ul li {
 	display: inline;
 	padding: 15px;
 }
@@ -14,7 +28,18 @@ header {
 }
 
 header nav ul {
-	float: right;
     position: relative;
     top: 15px;	
+}
+
+/* FOOTER */
+
+footer {
+	height: 50px;
+	width: 100%;
+	background-color: lightblue;
+}
+
+footer section {
+	padding: 15px;
 }
