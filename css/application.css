@@ -8,6 +8,8 @@
 	float: left;
 }
 
+
+
 /* MAIN */
 
 main {
@@ -27,12 +29,15 @@ header {
 	background-color: lightblue;
 }
 
+header nav {
+	height: 0px;
+}
 
 header .bit-3 .box {
 	padding: 45px 0;
 }
 
-header .bit-3 .box .fr, header .bit-2 .box .fl {
+header .bit-3 .box .fr, header .bit-3 .box .fl {
 	position: relative;
 }
 
@@ -45,6 +50,8 @@ header .bit-3 .box .fr {
 	right: 20px;
 	bottom: 10px;
 }
+
+
 
 /* FOOTER */
 

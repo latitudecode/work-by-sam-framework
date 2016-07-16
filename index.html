@@ -1,5 +1,5 @@
 <html>
-<body>
+
 	<head>
 		<!-- CSS -->
         <link rel="stylesheet" type="text/css" href="css/application.css" />
@@ -11,57 +11,98 @@
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
         <!-- JS -->
         <!-- Off canvas -->        
-        <script src="js/foundation.offcanvas.js"></script>
-        <script src="js/foundation.js"></script>
+        <script src="js/foundation/foundation.offcanvas.js"></script>
+        <script src="js/foundation/foundation.js"></script>         
 	</head>
-	<header> <!-- start header -->
+<body>
+<div class="off-canvas-wrap" data-offcanvas> <!-- start off canvas wrap -->
+    <div class="inner-wrap"> <!-- start flyout navigation content -->
+    
+        <!-- start the header and navigation -->
 
+    	<header> <!-- start header -->
 
-         <div class="bit-3">
-            <div class="box">
-                <nav>
-                    <ul class="fl">
-                        <li class="flyout">
-                            <a class="left-off-canvas-toggle" href="#">
-                            <i class="fa fa-bars"></i>
-                         </a> 
-                        </li>                        
-                        <li>home</li>
-                        <li>explore</li>
-                        <li>niceness</li>
-                    </ul>
-                </nav>
+             <div class="bit-3">
+                <div class="box">
+                    <nav>
+                        <ul class="fl">
+                            <li class="flyout">
+                                <a class="left-off-canvas-toggle" href="#">
+                                <i class="fa fa-bars"></i>
+                                </a> 
+                            </li>                        
+                            <li>home</li>
+                            <li>explore</li>
+                            <li>niceness</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>
 
-        <div class="bit-3">
-            <div class="box">
-                <nav>
-                    <ul class="center">
-                        <li>pushdown</li>
-                    </ul>
-                </nav>
+            <div class="bit-3">
+                <div class="box">
+                    <nav>
+                        <ul class="center">
+                            <li>pushdown</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>       
+
+            <div class="bit-3">
+                <div class="box">
+                    <nav>
+                        <ul class="fr">
+                            <li>home</li>
+                            <li>explore</li>
+                            <li>niceness</li>
+                            <li class="flyout">
+                                <a class="left-off-canvas-toggle" href="#">
+                                <i class="fa fa-bars"></i>
+                                </a> 
+                            </li>                          
+                        </ul>
+                    </nav>
+                </div>
             </div>
-        </div>       
 
-        <div class="bit-3">
-            <div class="box">
-                <nav>
-                    <ul class="fr">
-                        <li>home</li>
-                        <li>explore</li>
-                        <li>niceness</li>
-                        <li class="flyout">
-                            <a class="left-off-canvas-toggle" href="#">
-                            <i class="fa fa-bars"></i>
-                         </a> 
-                        </li>                          
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    	</header> <!-- end header -->
 
-	</header> <!-- end header -->
+        <!-- end of the header and navigation -->
+
+        <!-- begin off canvas menu -->
+
+        <!-- Off canvas left -->
+        <div class="flyout"> <!-- start main flyout menu content -->
+            <!-- Off Canvas Menu -->
+            <aside class="left-off-canvas-menu">
+                  <a class="exit-off-canvas"><i class="fa fa-times"></i></a>
+                <!-- whatever you want goes here -->
+                <ul>
+                    <li>home</li>
+                    <li>explore</li>
+                    <li>niceness</li>                                             
+                </ul>
+            </aside>
+        </div> <!-- end main flyout menu content -->
+    
+         <!-- Off canvas right -->
+        <div class="flyout"> <!-- start main flyout menu content -->
+            <!-- Off Canvas Menu -->
+            <aside class="right-off-canvas-menu">
+                  <a class="exit-off-canvas"><i class="fa fa-times"></i></a>
+                <!-- whatever you want goes here -->
+                <ul>
+                    <li><a href="#">work</a></li>
+                    <li><a href="#">studio</a></li>
+                    <li><a href="#">explore</a></li>
+                    <li><a href="#">info</a></li>
+                    <li><a href="#">contact</a></li>                                                
+                </ul>
+            </aside>
+        </div> <!-- end main flyout menu content -->
+               
+        <!-- end off canvas menus -->
 
 	<div class="frame">
         <!-- New Widths -->
@@ -430,5 +471,20 @@
 
 
 	</footer> <!-- end footer -->
+ 
+    <div class="off-canvas-wrap" data-offcanvas> <!-- end off canvas wrap -->
+<div class="inner-wrap"> <!-- end flyout navigation content -->
+
+<!-- scripts -->
+<!-- off canvas -->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/nav.js"></script>   
+    <script>
+      $(document).foundation();
+    </script>
+
+
 </body> 
 </html>
