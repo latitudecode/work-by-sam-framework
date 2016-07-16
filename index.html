@@ -9,12 +9,13 @@
         <!-- Off canvas -->
         <link rel="stylesheet" type="text/css" href="css/foundation.css" />
         <link rel="stylesheet" type="text/css" href="css/pushdown.css" />
+        <link rel="stylesheet" type="text/css" href="css/style5.css" />
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
         <!-- JS -->
         <!-- Off canvas -->        
         <script src="js/foundation/foundation.offcanvas.js"></script>
-        <script src="js/foundation/foundation.js"></script>         
+        <script src="js/foundation/foundation.js"></script>        
         
 	</head>
 <body>
@@ -48,6 +49,7 @@
                         <nav>
                             <ul class="center">
                                 <li><a class="nav-toggler toggle-push-top" href="#">pushdown</a></li>
+                                <li><button id="trigger-overlay" type="button">Open Overlay</button></li>
                             </ul>
                         </nav>
                     </div>
@@ -108,8 +110,22 @@
 
                 <nav class="menu push-menu-top">
                     <ul>
-                        <li><button class="close-menu"><i class="fa fa-times-circle-o"></i></li>
+                      <button class="close-menu"><i class="fa fa-times-circle-o"></i></li>
                     </ul>
+
+                    <!-- 3 columns -->
+                    <div class="bit-3">
+                        <div class="box">.bit-3</div>
+                    </div>
+
+                    <div class="bit-3">
+                        <div class="box">.bit-3</div>
+                    </div>
+
+                    <div class="bit-3">
+                        <div class="box">.bit-3</div>
+                    </div> 
+                               
                 </nav><!-- /push menu top -->
 
                 <div id="main">
@@ -130,6 +146,19 @@
                 </div><!-- #main -->
 
                 <!-- end off canvas pushdown -->  
+
+            <!-- start off canvas overlay menu -->
+            <div class="overlay overlay-scale">
+                <button type="button" class="overlay-close">Close</button>
+                <nav>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">explore</a></li>
+                        <li><a href="#">niceness</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- end off canvas overlay menu -->
 
             <!-- end off canvas menus -->
 
@@ -596,6 +625,8 @@
     <script src="js/foundation.min.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/nav.js"></script>   
+    <script src="js/modernizr.custom.js"></script> 
+    <script src="js/demo1.js"></script> 
     <script>
       $(document).foundation();
     </script>

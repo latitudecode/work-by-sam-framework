@@ -17,8 +17,8 @@ nav.menu.push-menu-top-subnav, nav.menu.push-menu-top {
 button.close-menu {
 	position: absolute;
 	float: right;
-	top: 10px;
-	right: 4px;
+    top: 20px;
+    right: 20px;
 }
 
 .contact {
@@ -41,13 +41,7 @@ nav.menu.push-menu-top, nav.menu.push-menu-top-subnav {
 	border: 1px solid #000;
 }
 
-/*
-body.smt-open nav.slide-menu-top, body.pmt-open nav.push-menu-top {
-    position: relative;
-    top: -485px !important;
-}
 
-*/
 
 body.smt-open nav.slide-menu-top, body.pmt-open nav.push-menu-top, body.pmt-open nav.push-menu-top-subnav {
     position: absolute;
@@ -118,7 +112,6 @@ nav.push-menu-top ul,
 nav.push-menu-bottom ul,
 nav.push-menu-top-subnav ul {
     text-align: center;
-    padding: 25px 0 0 0;
 }
 nav.slide-menu-top li,
 nav.slide-menu-bottom li,
