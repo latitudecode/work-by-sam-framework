@@ -19,17 +19,31 @@ main {
 
 header ul li {
 	display: inline;
-	padding: 15px;
+	padding: 10px;
 }
 
 header {
-	height: 50px;
+	height: 100px;
 	background-color: lightblue;
 }
 
-header nav ul {
-    position: relative;
-    top: 15px;	
+
+header .bit-2 .box {
+	padding: 45px 0;
+}
+
+header .bit-2 .box .fr, header .bit-2 .box .fl {
+	position: relative;
+}
+
+header .bit-2 .box .fl {
+	left: 20px;
+	bottom: 10px;
+}
+
+header .bit-2 .box .fr {
+	right: 20px;
+	bottom: 10px;
 }
 
 /* FOOTER */
