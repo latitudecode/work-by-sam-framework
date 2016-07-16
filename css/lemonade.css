@@ -102,10 +102,11 @@
     width: 50%; } }
 
 .box {
-  background: #FCD920;
+  border: 1px solid #000;
   font-family: "Futura", sans-serif;
   font-size: 14px;
   text-align: center;
   padding: 20px 0; }
   .box--new {
-    background: #87D37C; }
+    border: 1px solid #000;
+  }

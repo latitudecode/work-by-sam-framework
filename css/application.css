@@ -35,11 +35,26 @@ header nav ul {
 /* FOOTER */
 
 footer {
-	height: 50px;
+	height: 105px;
 	width: 100%;
 	background-color: lightblue;
 }
 
-footer section {
-	padding: 15px;
+footer .bit-2 .box {
+	padding: 45px 0;
 }
+
+footer .bit-2 .box .fr, footer .bit-2 .box .fl {
+	position: relative;		
+}
+
+footer .bit-2 .box .fl {
+	left: 20px;
+	bottom: 10px;
+}
+
+footer .bit-2 .box .fr {
+	right: 20px;
+	bottom: 10px;	
+}
+
