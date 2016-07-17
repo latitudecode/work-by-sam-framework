@@ -30,6 +30,17 @@
 </head>
 <body>
 
+        <!-- Flickity HTML init -->
+        <div class="gallery">
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+          <div class="gallery-cell"></div>
+        </div>    
+
+        <!-- end flickity gallery -->    
+
 <div id="wrapper"> <!-- start off canvas wrap 1 -->  
     <div class="off-canvas-wrap" data-offcanvas> <!-- start off canvas wrap 2 -->
         <div class="inner-wrap"> <!-- start flyout navigation content -->
@@ -194,16 +205,7 @@
 
  		<!-- start flickity gallery -->  
 
-		<!-- Flickity HTML init -->
-		<div class="gallery">
-		  <div class="gallery-cell"></div>
-		  <div class="gallery-cell"></div>
-		  <div class="gallery-cell"></div>
-		  <div class="gallery-cell"></div>
-		  <div class="gallery-cell"></div>
-		</div>
-
- 		<!-- end flickity gallery -->         
+     
 
       	<footer> <!-- start footer -->
 
@@ -230,17 +232,17 @@
     </div> <!-- end off canvas wrap 2 -->
 </div> <!-- end off canvas wrap 1 -->
 
-	<!-- flickity -->
-	<script>
-	// external js: flickity.pkgd.js
 
-	var $gallery = $('.gallery').flickity();
+    <!-- flickity -->
+    <script>
 
-	$('body').on( 'click', function() {
-		console.log('click')  
-	});
+    var $gallery = $('.gallery').flickity();
 
-	</script>
+    $('body').on( 'click', function() {
+        console.log('click')  
+    });
+
+    </script>    
 
     <!-- packery -->
     <script>
@@ -262,7 +264,7 @@
     <script>
       $(document).foundation();
     </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
 
 </body>
 </html>
