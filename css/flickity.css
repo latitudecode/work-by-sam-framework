@@ -104,7 +104,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots {
   position: absolute;
   width: 100%;
-  bottom: -25px;
+  bottom: 20px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -131,28 +131,27 @@ http://flickity.metafizzy.co
 
 /* ---- Slider / container ---- */
 
-    /* external css: flickity.css */
+/* external css: flickity.css */
 
-    .gallery {
-      background: #FAFAFA;
-    }
+.gallery {
+  background: #FAFAFA;
+  clear: both;
+}
 
-    .gallery-cell {
-      width: 66%;
-      height: 800px;
-      margin-right: 10px;
-      background: #8C8;
-      counter-increment: gallery-cell;
-    }
+.gallery-cell {
+  width: 66%;
+  height: 800px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
 
-    /* cell number */
-    .gallery-cell:before {
-      display: block;
-      text-align: center;
-      content: counter(gallery-cell);
-      line-height: 650px;
-      font-size: 80px;
-      color: white;
-    }
-
-
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 650px;
+  font-size: 80px;
+  color: white;
+}
