@@ -10,12 +10,18 @@
         <link rel="stylesheet" type="text/css" href="css/foundation.css" />
         <link rel="stylesheet" type="text/css" href="css/pushdown.css" />
         <link rel="stylesheet" type="text/css" href="css/style5.css" />
+        <!-- packery -->
+        <link rel="stylesheet" type="text/css" href="css/packery.css" />
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
         <!-- JS -->
+        <!-- packery -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/packery.pkgd.js"></script>
         <!-- Off canvas -->        
         <script src="js/foundation/foundation.offcanvas.js"></script>
         <script src="js/foundation/foundation.js"></script>
+
        
         
 	</head>
@@ -37,8 +43,8 @@
                                     <i class="fa fa-bars"></i>
                                     </a> 
                                 </li>                        
-                                <li>home</li>
-                                <li>explore</li>
+                                <li><a href="index.html">home</a></li>
+                                <li><a href="packery.html">packery</a></li>
                                 <li>niceness</li>
                             </ul>
                         </nav>
@@ -526,96 +532,9 @@
                 <div class="box">.bit-12</div>
             </div>
 
-            <!-- 11 columns -->
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <div class="bit-11">
-                <div class="box">.bit-11</div>
-            </div>
-
-            <!-- 10 columns -->
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>
-
-            <div class="bit-10">
-                <div class="box">.bit-10</div>
-            </div>            
-
         </div> <!-- end grid -->
 
-    	<footer> <!-- start footer -->
-
+      	<footer> <!-- start footer -->
 
             <div class="bit-2">
                 <div class="box">
@@ -640,8 +559,18 @@
     <div> <!-- end off canvas wrap 2 -->
 </div> <!-- end off canvas wrap 1 -->
 
-<!-- scripts -->
-<!-- off canvas -->
+    <!-- scripts -->
+    <!-- packery -->
+    <script>
+    // external js: packery.pkgd.js
+
+    $('.grid').packery({
+      itemSelector: '.grid-item',
+      columnWidth: 100
+    });
+
+    </script>
+    <!-- off canvas -->
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/classie.js"></script>
@@ -652,6 +581,7 @@
       $(document).foundation();
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    
 
 
 </body> 
