@@ -20,35 +20,11 @@
         <!-- pace -->
         <link rel="stylesheet" type="text/css" href="css/pace.css" /> 
         <!-- animstion -->
+       
         <link rel="stylesheet" type="text/css" href="css/animsition.css" />
+ 
+        <link rel="stylesheet" type="text/css" href="css/page-transitions/loading.css" />
         <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade.css" /> 
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-up.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-up-sm.css" /> 
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-up-lg.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-down.css" /> 
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-down-sm.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-down-lg.css" /> 
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-left-sm.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-left-lg.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-right.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-right-sm.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade-right-lg.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/rotate/rotate.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/rotate/rotate-sm.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/rotate/rotate-lg.css" />                        
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/flip/flip-x.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/flip/flip-x-nr.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/flip/flip-x-fr.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/flip/flip-y.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/flip/flip-y-nr.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/flip/flip-y-fr.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/zoom/zoom.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/zoom/zoom-sm.css" /> 
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/zoom/zoom-lg.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/overlay/overlay-slide-top.cs" /> 
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/overlay/overlay-slide-bottom.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/overlay/overlay-slide-left.css" /> 
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/overlay/overlay-slide-right.css" />
         <!-- JS -->
         <!-- packery -->
         <script src="js/jquery.min.js"></script>
@@ -58,13 +34,10 @@
         <script src="js/foundation/foundation.js"></script>
         <!-- pace -->
         <script src="js/pace.min.js"></script>
-        <!-- animstion -->
-        <script src="js/animsition.js"></script>
-       
-        
+
 	</head>
 <body>
-<div id="wrapper"> <!-- start off canvas wrap 1 -->  
+<div class="animsition" id="wrapper"> <!-- start off canvas wrap 1 -->  
     <div class="off-canvas-wrap" data-offcanvas> <!-- start off canvas wrap 2 -->
         <div class="inner-wrap"> <!-- start flyout navigation content -->
         
@@ -81,9 +54,9 @@
                                     <i class="fa fa-bars"></i>
                                     </a> 
                                 </li>                        
-                                <li><a href="index.html">grid</a></li>
-                                <li><a href="packery.html">packery</a></li>
-                                <li><a href="flickity.html">flickity</a></li>
+                                <li><a class="animsition-link" href="animsition.html">animation</a></li>
+                                <li><a class="animsition-link" href="packery.html">packery</a></li>
+                                <li><a class="animsition-link" href="flickity.html">flickity</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -104,8 +77,8 @@
                     <div class="box">
                         <nav>
                             <ul class="fr">
-                                <li><a href="headroom.html">headroom</a></li>
-                                <li><a href="asymmetrical.html">asymmetrical</a></li>
+                                <li><a class="animsition-link" href="headroom.html">headroom</a></li>
+                                <li><a class="animsition-link" href="asymmetrical.html">asymmetrical</a></li>
                                 <li>niceness</li>
                                 <li class="flyout">
                                     <a class="right-off-canvas-toggle" href="#">
@@ -619,8 +592,15 @@
       $(document).foundation();
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    
-
+    <!-- animstion -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/animsition.js"></script>
+         <script>
+      $(document).ready(function() {
+        $('.animsition').animsition();
+      });
+      </script>   
+  
 
 </body> 
 </html>
