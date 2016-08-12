@@ -22,7 +22,9 @@
         <!-- animstion -->
         <link rel="stylesheet" type="text/css" href="css/animsition.css" />
         <link rel="stylesheet" type="text/css" href="css/page-transitions/loading.css" />
-        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade.css" />                 
+        <link rel="stylesheet" type="text/css" href="css/page-transitions/fade/fade.css" />
+        <!-- instagram -->
+        <link rel="stylesheet" type="text/css" href="css/instagram.css" />                             
         <!-- JS -->
         <!-- packery -->
         <script src="js/jquery.min.js"></script>
@@ -32,7 +34,16 @@
         <script src="js/foundation/foundation.js"></script>
         <!-- pace -->
         <script src="js/pace.min.js"></script>
-       
+         <!-- instagram -->
+    
+        <script type="text/javascript">
+            var userFeed = new Instafeed({
+                get: 'user',
+                userId: '34417750',
+                accessToken: '34417750.3f949ca.5a06e03e1dda4dd0ae68c0504da0c004'
+            });
+            userFeed.run();
+        </script>      
         
 	</head>
 <body>
@@ -56,6 +67,7 @@
                                 <li><a class="animsition-link" href="index.html">grid</a></li>
                                 <li><a class="animsition-link" href="packery.html">packery</a></li>
                                 <li><a class="animsition-link" href="flickity.html">flickity</a></li>
+                                <li><a class="animsition-link" href="instagram.html">instagram</a></li>
                             </ul>
                         </nav>
                     </div>
